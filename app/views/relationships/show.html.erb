@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Requester:</strong>
+  <%= @relationship.requester_id %>
+</p>
+
+<p>
+  <strong>Recipient:</strong>
+  <%= @relationship.recipient_id %>
+</p>
+
+<p>
+  <strong>Accepted:</strong>
+  <%= @relationship.accepted %>
+</p>
+
+<%= link_to 'Edit', edit_relationship_path(@relationship) %> |
+<%= link_to 'Back', relationships_path %>

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @ping.content %>
+</p>
+
+<p>
+  <strong>Sender:</strong>
+  <%= @ping.sender_id %>
+</p>
+
+<p>
+  <strong>Conversation:</strong>
+  <%= @ping.conversation_id %>
+</p>
+
+<%= link_to 'Edit', edit_ping_path(@ping) %> |
+<%= link_to 'Back', pings_path %>
